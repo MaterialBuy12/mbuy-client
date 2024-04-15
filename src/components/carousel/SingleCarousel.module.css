@@ -1,0 +1,17 @@
+.all_products{
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+  backdrop-filter: blur(10px);
+  border: 1px solid #102c44;
+}
+
+@media screen and (max-width: 600px) {
+  .all_products{
+    transform: scale(0.8);
+  }
+}
+
+.carouselcontainer{
+  /* height: auto; */
+}

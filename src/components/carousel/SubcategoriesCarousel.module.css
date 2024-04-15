@@ -1,0 +1,15 @@
+.dod_card_bottoM {
+    background-color: #102c44;
+    overflow-x: hidden;
+  }
+  
+  .overflowname {
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    padding: 5px 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  

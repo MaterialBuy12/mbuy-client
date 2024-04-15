@@ -1,0 +1,213 @@
+.main-nav1 {
+    width: 100%;
+    /* padding: 10px 0; */
+    display: grid;
+    grid-template-columns:  6fr;  
+  }
+  
+  .menu-link1 {
+    grid-column: 1/1;
+  }
+  
+  .menu-link1 ul {
+    /* height: 5rem; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  
+  
+  .firstLi{
+    border: none !important ;
+  }
+  
+  .menu-link1 ul li {
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid rgba(163, 160, 160, 0.37);
+    padding-left: 8px;
+  }
+  
+  
+  .menu-link1 ul li a {
+    text-transform: capitalize;
+    color: rgb(255 255 255);
+    /* transition: 0.5s; */
+    font-size: 14.3px;
+    padding: 0 10px;
+  }
+  
+  .icons1{
+    color: rgb(255 255 255);
+  }
+  
+  .menu-link1 ul li:hover > a, .menu-link1 ul li:hover > .icons1 {
+    color: rgba(190, 186, 186, 0.774);
+    /* transition: all 0.5s ease-out; */
+  }
+  
+  .hamburger-menu1 {
+    display: none;
+  }
+  
+  
+  @media (max-width: 1080px) {
+    .main-nav1 {
+      /* height: 8rem; */
+      grid-template-columns: 8fr ;
+    }
+  }
+  
+  @media (max-width: 998px) {
+    .categorynavmob{
+      display: none;
+    }
+    .fullcontainer{
+      background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+    }
+    .main-nav1 {
+      height: 0rem;
+      grid-template-columns:  8fr ;
+  
+    }
+    
+    .menu-link1 {
+      display: none;
+    }
+    
+    .menu-link1 ul, .menu-link1 ul li{
+      border: none;
+      width: auto;
+    }
+    
+    .mobile-menu-link1 {
+      position: relative;
+      z-index: 10;
+      border: none;
+    }
+    
+    .mobile-menu-link1 {
+      height: 20rem;
+      display: grid;
+      grid-column: 2/3;
+      align-items: center;
+      padding-left: 0.5rem;
+      padding-right: 2rem;
+      transition: all 2s linear;
+      transform-origin: top;
+      border: none;
+      top: 18%;
+      left: 24%;
+    }
+    
+    
+    .mobile-menu-link1 ul {
+      height: 20rem;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      align-items: start;
+    }
+    
+    .mobile-menu-link1 ul li:first-child {
+      transition-delay: 0.2s;
+    }
+    
+    .mobilenavbar1{
+      grid-row: 1/2;
+      grid-column: 4/5;
+      justify-items: end;
+      align-items: center;
+      transition: all 2s linear;
+      height: 7rem;
+      margin-right: 25px;    
+    }
+    
+    .hamburger-menu1 {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 798px) {
+    .main-nav1 {
+      height: 0rem;
+      /* height: auto; */
+      grid-template-columns:  8fr ;
+    }
+  
+    .hamburger-menu1 {
+      display: block;
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 520px) {
+    .main-nav1 {
+      height: 0rem;
+      /* height: auto; */
+      grid-template-columns: 1rem 10fr 1rem;
+    }
+  
+    .hamburger-menu1 {
+      display: block;
+      font-size: 2rem;
+    }  
+  
+    .mobile-menu-link1{
+      top: 20%;
+      left: 21%
+    }
+  }
+
+  
+  @media (max-width: 998px) {
+    .main-nav1 {
+      height: 0rem;
+      grid-template-columns: auto 1fr auto; /* Updated to include auto columns */
+    }
+  
+    .menu-link1 {
+      display: none;
+    }
+  
+    .mobile-menu-link1 {
+      height: 20rem;
+      display: grid;
+      grid-column: 1/2; 
+      align-items: center;
+      padding-left: 0.5rem;
+      padding-right: 2rem;
+      transition: all 2s linear;
+      transform-origin: top;
+      border: none;
+      top: 18%;
+      left: 0; /* Align with the left edge of the screen */
+    }
+  
+    .mobile-menu-link1 ul {
+      height: 20rem;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      align-items: start;
+    }
+  
+    /* .mobile-menu-link1 ul li:first-child {
+      transition-delay: 0.2s;
+    } */
+  
+    .mobilenavbar1 {
+      grid-row: 1/2;
+      grid-column: 1/2; /* Move the hamburger icon to the left side */
+      justify-items: start; /* Adjust the alignment */
+      align-items: center;
+      height: 7rem;
+      margin-left: 5px; /* Adjust the margin for spacing */
+    }
+  }
+  
